@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b80ff6bd1129e4e81a3fd9ce6eeb8f, type: 3}
+  m_Name: TextData
+  m_EditorClassIdentifier: 
+  img: {fileID: 0}
+  text:
+  - "\uC548\uB155"
+  - "\uD558\uC138\uC694"
+  - "\uBC18\uAC11"
+  - "\uC2B5\uB2C8\uB2E4."
+  - "\u3141\u3134\u3147\u3139"
