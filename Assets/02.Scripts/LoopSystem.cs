@@ -47,7 +47,7 @@ public class LoopSystem : MonoBehaviour
     public Image a;
     void Start()
     {
-        GoToNextScene();
+        //GoToNextScene();
     }
 
     void Update()
@@ -60,8 +60,19 @@ public class LoopSystem : MonoBehaviour
     }
     public void GoToNextScene()
     {
+
+        if (stage+1 == MaxStage)
+        {
+            chapter++;
+
+        }
+        else if ((stage + 1) == MaxChapter && (stage + 1) == MaxStage)
+        {
+            SceneManager.LoadScene("Finish");
+        }
         stage++;
         SceneManager.LoadScene(stage.ToString());
+        
     }
     public void GoToScene(int scene)
     {
