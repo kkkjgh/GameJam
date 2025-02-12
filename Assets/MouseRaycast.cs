@@ -15,6 +15,8 @@ public class MouseRaycast : MonoBehaviour
         // 레이어 마스크를 사용하여 Default 레이어만 체크
         int layerMask = layer;
 
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
         // Raycast 시 Default 레이어에 있는 오브젝트만 체크
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
         {
@@ -23,7 +25,9 @@ public class MouseRaycast : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 obj = hit.transform.gameObject;
-                obj.transform.position = new Vector3(hit.point.x, hit.point.y, 0);
+                //obj.transform.position = new Vector3(hit.point.x, hit.point.y, 0);
+                obj.transform.position = new Vector3(mouseWorldPos.x, mouseWorldPos.y, obj.transform.position.z);
+                Debug.Log(mouseWorldPos.x +" "+ mouseWorldPos.y);
             }
             if (Input.GetMouseButtonUp(0))
             {
