@@ -464,7 +464,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e772d4ee84b75644a0f4fb604dd29c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundMusic: 0
+  backgroundMusic: 1
+  volume: 0.5
 --- !u!1001 &305406693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1064,6 +1065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: 0
+  volume: 1
 --- !u!114 &1496325274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,6 +1213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: 0
+  volume: 1
 --- !u!114 &1645425916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1437,6 +1440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: 0
+  volume: 1
 --- !u!114 &1858383336
 MonoBehaviour:
   m_ObjectHideFlags: 0
