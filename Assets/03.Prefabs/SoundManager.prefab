@@ -242,6 +242,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6d5f176c31d0de6498e6fa44632c6999, type: 3}
   - {fileID: 8300000, guid: 795753b47b55b7c4f8c403235aa5eee8, type: 3}
   - {fileID: 8300000, guid: 8d0cafd7ed2434c43acd8f1386b17c31, type: 3}
-  sfxs: []
+  sfxs:
+  - {fileID: 8300000, guid: 3943cf756c6a54d448ddf1ecf2808eaa, type: 3}
+  - {fileID: 8300000, guid: 32f40164b7417dd49a048ca3eb594655, type: 3}
   audioBGM: {fileID: 4772486504630783653}
   audioSFX: {fileID: 2442686281826985176}

@@ -47,8 +47,8 @@ public class SoundManager : MonoBehaviour
 
     public enum SFX
     {
-        SFX_BUTTON,
-        SFX_ENDING,
+        SFX_CLICK,
+        SFX_BOOK,
         SFX_NEXTSTAGE,
         SFX_CLEAR,
         SFX_FINISH
