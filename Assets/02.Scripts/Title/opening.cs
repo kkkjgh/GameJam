@@ -4,7 +4,8 @@ using System.Collections;
 public class opening : MonoBehaviour
 {
     public GameObject targetToDisable; // 비활성화할 오브젝트
-    public GameObject targetToEnable;  // 활성화할 오브젝트
+    public GameObject targetToEnable; // 활성화할 오브젝트
+    public GameObject targetToEnable2; // 활성2
     public float delayTime = 2f;       // 지연 시간 (초)
 
     private void Start()
@@ -21,5 +22,7 @@ public class opening : MonoBehaviour
 
         if (targetToEnable != null)
             targetToEnable.SetActive(true);
+        if (targetToEnable2 != null)
+            targetToEnable2.SetActive(true);
     }
 }
