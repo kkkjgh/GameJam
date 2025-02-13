@@ -393,6 +393,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 872108561382980992, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: m_Text
+      value: 1980.xx.xx
+      objectReference: {fileID: 0}
     - target: {fileID: 3588962404293110823, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -495,6 +499,10 @@ PrefabInstance:
     - target: {fileID: 5783076283792506277, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7517567296531388759, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: m_Text
+      value: 0/3
       objectReference: {fileID: 0}
     - target: {fileID: 8127470097098498847, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Text

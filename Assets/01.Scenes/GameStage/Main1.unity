@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 86289919}
+  counttarget: {fileID: 0}
 --- !u!1 &122074552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,6 +1961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1086265321}
+  counttarget: {fileID: 0}
 --- !u!1 &1194230332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,6 +2301,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 872108561382980992, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: m_Text
+      value: 1970.xx.xx
+      objectReference: {fileID: 0}
     - target: {fileID: 3588962404293110823, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2389,6 +2395,10 @@ PrefabInstance:
       propertyPath: typeSecond
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 7517567296531388759, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: m_Text
+      value: 0/3
+      objectReference: {fileID: 0}
     - target: {fileID: 8127470097098498847, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Text
       value: 1
@@ -2434,6 +2444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db029dc2674d0514b81013e9f085af2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextButton: {fileID: 0}
+  buttonClickCount: 0
 --- !u!4 &1344219899
 Transform:
   m_ObjectHideFlags: 0
@@ -3720,6 +3732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1792657283}
+  counttarget: {fileID: 0}
 --- !u!1 &1852124323
 GameObject:
   m_ObjectHideFlags: 0
