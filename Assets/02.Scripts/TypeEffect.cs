@@ -11,6 +11,7 @@ public class TypeEffect : MonoBehaviour
     public float typeSecond;
     [SerializeField]private int index = 0;
     public GameObject endObj;
+    public bool typeEnd;
     
 
     private void Start()
@@ -43,6 +44,7 @@ public class TypeEffect : MonoBehaviour
     }
     public void EffectEnd()
     {
+        typeEnd = true;
         endObj.SetActive(true);
     }
 }

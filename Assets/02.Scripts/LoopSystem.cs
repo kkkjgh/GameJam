@@ -42,20 +42,9 @@ public class LoopSystem : MonoBehaviour
     public int stage = 0;
     public Text stageText;
     public int wrongCount = 0;
-    
-    public Image a;
-    void Start()
+    public int GetStage()
     {
-        //GoToNextScene();
-    }
-
-    void Update()
-    {
-        
-    }
-    public void Printstage()
-    {
-        //stageText.GetComponent<Text>().text = ;
+        return stage;
     }
     public void GoToNextScene()
     {
@@ -64,14 +53,14 @@ public class LoopSystem : MonoBehaviour
             SceneManager.LoadScene("Finish");
         }
         stage++;
-        string sceneName = "main" + stage;
-        SceneManager.LoadScene(stage.ToString());
+        string sceneName = "Main" + stage;
+        SceneManager.LoadScene(String.Format(sceneName));
         
     }
     public void GoToScene(int scene)
     {
         stage = scene;
-        string sceneName = "main" + scene;
+        string sceneName = "Main" + scene;
         if (stage == 0)
         {
             SceneManager.LoadScene("Title");
@@ -87,8 +76,9 @@ public class LoopSystem : MonoBehaviour
     }
     public void GoToStart()
     {
-        SceneManager.LoadScene("01");
-        wrongCheck = false;
         stage = 1;
+        SceneManager.LoadScene("Main1");
+        wrongCheck = false;
+
     }
 }
