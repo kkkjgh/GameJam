@@ -241,10 +241,13 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - target: {fileID: 7517567296531388759, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Text
       value: 0/4
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
     - target: {fileID: 7638360413047978475, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: flag
@@ -254,6 +257,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: 0/4
 >>>>>>> bcd853a29d4c6eee63f5cb213e5a8834b471bbf0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8127470097098498847, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
