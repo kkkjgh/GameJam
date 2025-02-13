@@ -15,7 +15,7 @@ public class TypeEffect : MonoBehaviour
 
     private void Start()
     {
-        SetText("나는 지금 테스트를 하기 위해 발악하고 있다 으아아악");
+        SetText(typetext);
     }
     public void SetText(string text)
     {
