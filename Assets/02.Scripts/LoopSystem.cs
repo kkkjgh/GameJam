@@ -38,7 +38,6 @@ public class LoopSystem : MonoBehaviour
 
     public bool wrongCheck = false;
     public int MaxStage = 4;
-    public int MaxChapter = 4;
     public int stage = 0;
     public Text stageText;
     public int wrongCount = 0;
@@ -59,8 +58,31 @@ public class LoopSystem : MonoBehaviour
     }
     public void GoToScene(int scene)
     {
+<<<<<<< Updated upstream
         stage = scene; 
         SceneManager.LoadScene(String.Format(scene.ToString()));
+=======
+<<<<<<< HEAD
+        Debug.Log(scene+"dadasdasdasdsd");
+        stage = scene;
+        string sceneName = "Main" + scene;
+        if (scene == 0)
+        {
+            SceneManager.LoadScene("Title");
+        }
+        else if (stage < MaxStage - 1 && stage != 0) // 0 입력 시 타이틀
+        {
+            SceneManager.LoadScene(String.Format(sceneName));
+        } else if (stage == MaxStage - 1)
+        {
+            SceneManager.LoadScene("Finish");
+        }
+
+=======
+        stage = scene; 
+        SceneManager.LoadScene(String.Format(scene.ToString()));
+>>>>>>> 6b8884265a1e99035418386b5427bdae9722f40e
+>>>>>>> Stashed changes
     }
     public void GoToStart()
     {
