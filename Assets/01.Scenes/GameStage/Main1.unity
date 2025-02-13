@@ -2463,6 +2463,18 @@ PrefabInstance:
       propertyPath: m_Text
       value: 1970.xx.xx
       objectReference: {fileID: 0}
+    - target: {fileID: 3014471518215012437, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3014471518215012437, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 88.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3014471518215012437, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -648.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3588962404293110823, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2559,7 +2571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7517567296531388759, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Text
-      value: 0/3
+      value: 3 puzzles
       objectReference: {fileID: 0}
     - target: {fileID: 7638360413047978475, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: flag
