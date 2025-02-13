@@ -30,10 +30,8 @@ public class StartFadeOut : MonoBehaviour
                 gameObject.GetComponent<CanvasRenderer>().SetAlpha(Mathf.Lerp(0f, 1f, elapsedTime / fadedTime));
 
                 elapsedTime += Time.deltaTime;
-                Debug.Log("Fade Out Сп...");
                 yield return null;
             }
-            Debug.Log("Fade Out ГЁ");
             isTrigger = false;
         }
         play = false;

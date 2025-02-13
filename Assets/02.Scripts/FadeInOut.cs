@@ -55,15 +55,15 @@ public class FadeInOut : MonoBehaviour
 
         while (elapsedTime <= fadedTime)
         {
+            // 알파 값 변경 (1 -> 0으로)
             panel.GetComponent<CanvasRenderer>().SetAlpha(Mathf.Lerp(1f, 0f, elapsedTime / fadedTime));
 
             elapsedTime += Time.deltaTime;
             Debug.Log("Fade In 중...");
             yield return null;
         }
+
         Debug.Log("Fade In 끝");
-        panel.SetActive(false); // Panel을 비활성화
-        yield break;
     }
 
     IEnumerator CoFadeOut()
@@ -73,6 +73,7 @@ public class FadeInOut : MonoBehaviour
 
         while (elapsedTime <= fadedTime)
         {
+            // 알파 값 변경 (0 -> 1로)
             panel.GetComponent<CanvasRenderer>().SetAlpha(Mathf.Lerp(0f, 1f, elapsedTime / fadedTime));
 
             elapsedTime += Time.deltaTime;
@@ -80,7 +81,8 @@ public class FadeInOut : MonoBehaviour
             yield return null;
         }
 
+       
         Debug.Log("Fade Out 끝");
-        yield break;
+        // 알파가 0인 상태로 남아있도록 처리 후 비활성화 안 함
     }
 }

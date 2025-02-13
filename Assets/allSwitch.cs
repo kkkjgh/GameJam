@@ -17,6 +17,7 @@ public class allSwitch : MonoBehaviour
                 else if (gameObjects[i].GetComponent<StartFadeOutObj>() != null)
                     gameObjects[i].GetComponent<StartFadeOutObj>().isTrigger = true;
             }
+            flag = false;
         }
     }
 }
