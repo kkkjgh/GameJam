@@ -845,6 +845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 452478181}
   - component: {fileID: 452478180}
+  - component: {fileID: 452478182}
   m_Layer: 0
   m_Name: "\uCCAD\uC18C\uB144 \uCE90\uB9AD\uD1303"
   m_TagString: Untagged
@@ -919,6 +920,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &452478182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452478179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &489461776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658349509}
   - component: {fileID: 658349508}
+  - component: {fileID: 658349511}
   m_Layer: 5
   m_Name: KakaoTalk_20250212_193605411
   m_TagString: Untagged
@@ -1248,6 +1264,75 @@ Transform:
   - {fileID: 276504098}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &658349511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658349507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
+--- !u!1 &732073638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 732073639}
+  - component: {fileID: 732073640}
+  m_Layer: 0
+  m_Name: AllSwitch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &732073639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732073638}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &732073640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732073638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8306d7ebcb58ac459914ca7bed40810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjects:
+  - {fileID: 1746988326}
+  - {fileID: 452478179}
+  - {fileID: 1983181722}
+  - {fileID: 2039335664}
+  - {fileID: 1787590114}
+  - {fileID: 1641892748}
+  - {fileID: 1283560224}
+  - {fileID: 658349507}
+  - {fileID: 1520179428}
+  flag: 0
 --- !u!1 &760653730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,6 +2283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1283560225}
   - component: {fileID: 1283560226}
+  - component: {fileID: 1283560227}
   m_Layer: 0
   m_Name: KakaoTalk_20250212_212633092
   m_TagString: Untagged
@@ -2272,6 +2358,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1283560227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283560224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1328523649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2543,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: flagObj
+      value: 
+      objectReference: {fileID: 732073638}
     - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: typetext
       value: "\uB098 \uB54C\uBB38\uC5D0 \uB9E4\uC77C \uC2F8\uC6B0\uB294 \uC5C4\uB9C8
@@ -2757,6 +2861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1520179430}
   - component: {fileID: 1520179429}
+  - component: {fileID: 1520179431}
   m_Layer: 0
   m_Name: "\uCCAD\uC18C\uB144 \uCE90\uB9AD\uD1303-\uD314"
   m_TagString: Untagged
@@ -2832,6 +2937,20 @@ Transform:
   - {fileID: 1983181723}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 39.272}
+--- !u!114 &1520179431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520179428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1588574363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3106,6 +3225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1641892749}
   - component: {fileID: 1641892750}
+  - component: {fileID: 1641892751}
   m_Layer: 0
   m_Name: KakaoTalk_20250212_212654439
   m_TagString: Untagged
@@ -3180,6 +3300,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1641892751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641892748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1688648471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,6 +3726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1746988328}
   - component: {fileID: 1746988327}
+  - component: {fileID: 1746988329}
   m_Layer: 0
   m_Name: "\uCCAD\uC18C\uB144 \uCE90\uB9AD\uD1304"
   m_TagString: Untagged
@@ -3666,6 +3801,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1746988329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746988326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1787590114
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,6 +3825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1787590115}
   - component: {fileID: 1787590116}
+  - component: {fileID: 1787590117}
   m_Layer: 0
   m_Name: KakaoTalk_20250212_212709383
   m_TagString: Untagged
@@ -3750,6 +3900,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1787590117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787590114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1792657283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3908,6 +4072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983181723}
   - component: {fileID: 1983181724}
+  - component: {fileID: 1983181725}
   m_Layer: 0
   m_Name: "\uCCAD\uC18C\uB144 \uCE90\uB9AD\uD1301"
   m_TagString: Untagged
@@ -3982,6 +4147,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1983181725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983181722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &2039335664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,6 +4171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2039335666}
   - component: {fileID: 2039335665}
+  - component: {fileID: 2039335667}
   m_Layer: 0
   m_Name: "\uCCAD\uB144\uAE30_\uAE30\uBCF8 \uBC30\uACBD"
   m_TagString: Untagged
@@ -4066,6 +4246,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2039335667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039335664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4099,3 +4293,4 @@ SceneRoots:
   - {fileID: 1746988328}
   - {fileID: 1344219899}
   - {fileID: 834453131}
+  - {fileID: 732073639}
