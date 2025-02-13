@@ -116,6 +116,8 @@ public class movecamera : MonoBehaviour
     public GameObject targetToEnable;  // 활성화 후 1초 뒤 사라질 오브젝트
     public GameObject targetToEnable2; // 추가로 즉시 활성화할 오브젝트
     public GameObject targetToEnable3; // 1초 뒤에 활성화할 오브젝트
+    public GameObject targetToEnable4;
+    public GameObject targetToEnable5;
     public GameObject objectToMove;    // 이동할 오브젝트
     public float moveDistance = -2f;   // X축 이동 거리 (-2)
     public float moveDuration = 1f;    // 이동 시간 (1초)
@@ -140,6 +142,14 @@ public class movecamera : MonoBehaviour
         if (targetToEnable3 != null) // 1초 뒤에 활성화할 오브젝트
         {
             StartCoroutine(EnableAfterDelay(targetToEnable3, opendelay));
+        }
+        if (targetToEnable3 != null) // 1초 뒤에 활성화할 오브젝트
+        {
+            StartCoroutine(EnableAfterDelay(targetToEnable4, opendelay));
+        }
+        if (targetToEnable3 != null) // 1초 뒤에 활성화할 오브젝트
+        {
+            StartCoroutine(EnableAfterDelay(targetToEnable5, opendelay));
         }
 
         if (objectToMove != null)
