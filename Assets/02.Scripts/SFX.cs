@@ -1,18 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SFX : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public SoundManager.SFX soundEffect;  //  효과음 종류 (Inspector에서 설정 가능)
 
-    // Update is called once per frame
-    void Update()
+    public void PlayEffect()
     {
-        
+        SoundManager.Instance.playSFX(soundEffect);  //  선택한 효과음 재생
     }
 }

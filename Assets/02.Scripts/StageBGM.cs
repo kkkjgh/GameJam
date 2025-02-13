@@ -7,8 +7,8 @@ public class StageBGM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
 
+        SoundManager.Instance.stopBGM();
         //SoundManager.Instance.playBGM(SoundManager.BGM.BGM_TITLE); // 타이틀 브금
         SoundManager.Instance.playBGM(SoundManager.BGM.BGM_STAGE); // 스테이지 브금
         //SoundManager.Instance.playBGM(SoundManager.BGM.BGM_FINISH); // 엔딩 브금

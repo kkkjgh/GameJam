@@ -12,9 +12,6 @@ public class SoundManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject);
-
-            if (audioBGM != null)
-                audioBGM.loop = true; // BGM 반복 설정
         }
         else
         {
@@ -62,7 +59,6 @@ public class SoundManager : MonoBehaviour
         SFX_3ST_MIRROR,
         SFX_4ST_CHAIR,
         SFX_4ST_FRAME,
-
     }
 
     [SerializeField] private AudioClip[] bgms;
@@ -71,12 +67,14 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioSource audioBGM;
     [SerializeField] private AudioSource audioSFX;
 
+    private Dictionary<SFX, Coroutine> playingSFXCoroutines = new Dictionary<SFX, Coroutine>();
+
     private Dictionary<SFX, float> sfxCooldown = new Dictionary<SFX, float>();
 
     public void playBGM(BGM bgmIndex)
     {
         if (audioBGM.clip == bgms[(int)bgmIndex] && audioBGM.isPlaying)
-            return; // 같은 BGM이 이미 재생 중이면 다시 재생하지 않음.
+            return;
 
         audioBGM.clip = bgms[(int)bgmIndex];
         audioBGM.Play();
@@ -90,9 +88,30 @@ public class SoundManager : MonoBehaviour
     public void playSFX(SFX sfxIndex)
     {
         if (sfxCooldown.ContainsKey(sfxIndex) && Time.time - sfxCooldown[sfxIndex] < 0.1f)
-            return; // 같은 SFX가 0.1초 내에 다시 재생되지 않도록 함.
+            return;
 
         sfxCooldown[sfxIndex] = Time.time;
-        audioSFX.PlayOneShot(sfxs[(int)sfxIndex]);
+
+        if (playingSFXCoroutines.ContainsKey(sfxIndex))
+        {
+            StopCoroutine(playingSFXCoroutines[sfxIndex]);
+        }
+
+        playingSFXCoroutines[sfxIndex] = StartCoroutine(PlaySFXWithLimit(sfxIndex));
+    }
+
+    private IEnumerator PlaySFXWithLimit(SFX sfxIndex)
+    {
+        audioSFX.clip = sfxs[(int)sfxIndex];
+        audioSFX.Play();
+
+        yield return new WaitForSeconds(3f);
+
+        if (audioSFX.isPlaying && audioSFX.clip == sfxs[(int)sfxIndex])
+        {
+            audioSFX.Stop();
+        }
+
+        playingSFXCoroutines.Remove(sfxIndex);
     }
 }
