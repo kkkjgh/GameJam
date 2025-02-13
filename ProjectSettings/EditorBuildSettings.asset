@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/01.Scenes/GameStage/Main.unity
     guid: 46f36030bf75d7145a1b2918464ec85b
   - enabled: 1
-    path: Assets/01.Scenes/GameStage/Main4.unity
+    path: Assets/01.Scenes/GameStage/Temp.unity
     guid: 6fe30c268ad051544a5ce213ff095c8d
   - enabled: 1
     path: Assets/01.Scenes/GameStage/Main3.unity
