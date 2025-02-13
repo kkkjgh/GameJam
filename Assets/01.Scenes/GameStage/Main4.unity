@@ -1762,6 +1762,10 @@ PrefabInstance:
       propertyPath: flagObj
       value: 
       objectReference: {fileID: 119980742}
+    - target: {fileID: 4400061673556624066, guid: 4386ddfaf07e77945b03fa3b33fc65f2, type: 3}
+      propertyPath: m_Text
+      value: 3 puzzles
+      objectReference: {fileID: 0}
     - target: {fileID: 5333270846915310124, guid: 4386ddfaf07e77945b03fa3b33fc65f2, type: 3}
       propertyPath: m_Name
       value: Page
