@@ -68,8 +68,13 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioSource audioSFX;
 
     private Dictionary<SFX, Coroutine> playingSFXCoroutines = new Dictionary<SFX, Coroutine>();
-
     private Dictionary<SFX, float> sfxCooldown = new Dictionary<SFX, float>();
+
+    void OnSceneLoaded()
+    {
+        // 씬이 로드될 때 BGM 볼륨을 기본값으로 초기화
+        audioBGM.volume = 1f;
+    }
 
     public void playBGM(BGM bgmIndex)
     {
@@ -83,6 +88,7 @@ public class SoundManager : MonoBehaviour
     public void stopBGM()
     {
         audioBGM.Stop();
+        audioBGM.volume = 1f; // BGM이 정지될 때, 볼륨을 초기화 (다음 씬에서 다시 1로 설정)
     }
 
     public void playSFX(SFX sfxIndex)
@@ -114,4 +120,33 @@ public class SoundManager : MonoBehaviour
 
         playingSFXCoroutines.Remove(sfxIndex);
     }
+
+    // BGM을 서서히 끄는 기능
+    public void FadeOutBGM(float duration)
+    {
+        StartCoroutine(FadeOutBGMCoroutine(duration));
+    }
+
+    private IEnumerator FadeOutBGMCoroutine(float duration)
+    {
+        float startVolume = audioBGM.volume;
+
+        for (float t = 0; t < duration; t += Time.deltaTime)
+        {
+            // 점진적으로 BGM의 볼륨을 줄임
+            audioBGM.volume = Mathf.Lerp(startVolume, 0f, t / duration);
+            yield return null;
+        }
+
+        // 마지막으로 BGM 볼륨을 정확히 0으로 설정
+        audioBGM.volume = 0f;
+
+        // BGM이 더 이상 필요 없다면 정지
+        audioBGM.Stop();
+    }
+    public void SetBGMVolume(float volume)
+    {
+        audioBGM.volume = volume;
+    }
+
 }
