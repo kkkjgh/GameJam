@@ -130,20 +130,19 @@ public class SoundManager : MonoBehaviour
     private IEnumerator FadeOutBGMCoroutine(float duration)
     {
         float startVolume = audioBGM.volume;
+        float targetVolume = 0.2f; // 페이드 아웃 후의 목표 볼륨
 
         for (float t = 0; t < duration; t += Time.deltaTime)
         {
             // 점진적으로 BGM의 볼륨을 줄임
-            audioBGM.volume = Mathf.Lerp(startVolume, 0f, t / duration);
+            audioBGM.volume = Mathf.Lerp(startVolume, targetVolume, t / duration);
             yield return null;
         }
 
-        // 마지막으로 BGM 볼륨을 정확히 0으로 설정
-        audioBGM.volume = 0f;
-
-        // BGM이 더 이상 필요 없다면 정지
-        audioBGM.Stop();
+        // 마지막으로 BGM 볼륨을 정확히 targetVolume으로 설정
+        audioBGM.volume = targetVolume;
     }
+
 
     // BGM 볼륨을 설정하는 메소드
     public void SetBGMVolume(float volume)

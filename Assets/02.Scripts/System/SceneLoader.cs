@@ -9,6 +9,7 @@ public class SceneLoader : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(sceneName))
         {
+            SoundManager.Instance.stopBGM();  // BGM ∏ÿ√ﬂ±‚
             SceneManager.LoadScene(sceneName); // ¡ˆ¡§«— æ¿ ∑ŒµÂ
         }
         else
