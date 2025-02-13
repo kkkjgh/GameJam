@@ -22,6 +22,7 @@ public class LoopSystem : MonoBehaviour
             {
                 Destroy(this.gameObject);
             }
+
     }
 
     public static LoopSystem Instance
@@ -37,7 +38,7 @@ public class LoopSystem : MonoBehaviour
     }
 
     public bool wrongCheck = false;
-    public int MaxStage = 4;
+    public int MaxStage = 5;
     public int stage = 0;
     public Text stageText;
     public int wrongCount = 0;
@@ -74,11 +75,13 @@ public class LoopSystem : MonoBehaviour
         {
             SceneManager.LoadScene("Tuto");
             stage = 0;
+            scene++;
         }
         else if (scene < MaxStage && scene > 0)
         {
             SceneManager.LoadScene("Main" + scene);
-            stage = scene;
+            
+            stage = ++scene;
         }
         else if (scene == MaxStage - 1)
         {
