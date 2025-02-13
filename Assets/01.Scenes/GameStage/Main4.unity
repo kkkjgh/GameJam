@@ -711,21 +711,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: typetext
-      value: "\uC61B\uB0A0 \uC61B\uC801\uC5D0, \uD638\uB7AD\uC774\uAC00 \uB2F4\uBC30
-        \uD53C\uB358 \uC2DC\uC808\uC5D0~ \uC7A5\uD6C4\uC640 \uC900\uC6B0\uC640 \uBBFC\uACBD\uC774\uC640
-        \uC900\uD601\uC774\uAC00 \uC0B4\uC558\uC5B4\uC694~\uC815\uC2E0\uC774 \uB098\uAC08
-        \uAC83 \uAC19\uC544\uC694~\u3160\u3160\u3160\u3160"
+      value: "\uC790\uC2DD\uB3C4 \uAC00\uC871\uB3C4 \uB0A8\uD3B8\uB3C4 \uCE5C\uAD6C\uB3C4,,
+        \uB0B4\uAC8C \uB0A8\uC740 \uAC74 \uBB34\uC5C7\uC77C\uAE4C,, \uB098\uB294
+        \uC5B4\uB5BB\uAC8C \uC0B4\uC558\uC5B4\uC57C \uD588\uC744\uAE4C?"
       objectReference: {fileID: 0}
     - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: TargetText
       value: 
       objectReference: {fileID: 92557034}
+    - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: typeSecond
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 8893007879696953209, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Name
       value: Page
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1235382066074289039, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
