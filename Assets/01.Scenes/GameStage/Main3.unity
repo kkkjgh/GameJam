@@ -215,6 +215,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: flagObj
+      value: 
+      objectReference: {fileID: 1683950355}
+    - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: typetext
       value: "\uAC00\uC871\uB4E4\uC740 \uB0B4\uAC00 atm\uAE30\uC778 \uC904 \uC544\uB294
         \uAC83 \uAC19\uB2E4. \uAC70\uC6B8\uC744 \uBC14\uB77C\uBCF4\uB2C8 \uC220\uC5D0
@@ -977,6 +981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 633686809}
   - component: {fileID: 633686808}
+  - component: {fileID: 633686810}
   m_Layer: 0
   m_Name: "\uC911\uB144\uAE30 \uCE90\uB9AD\uD1301"
   m_TagString: Untagged
@@ -1051,6 +1056,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &633686810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633686807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &642528542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,6 +1692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226607443}
   - component: {fileID: 1226607442}
+  - component: {fileID: 1226607444}
   m_Layer: 0
   m_Name: "\uC220"
   m_TagString: Untagged
@@ -1747,6 +1767,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226607444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226607441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1382726975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,6 +1959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1503529578}
   - component: {fileID: 1503529577}
+  - component: {fileID: 1503529579}
   m_Layer: 0
   m_Name: "\uBC30\uACBD"
   m_TagString: Untagged
@@ -1999,6 +2034,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1503529579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503529576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1528925641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,6 +2197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1683950356}
+  - component: {fileID: 1683950357}
   m_Layer: 0
   m_Name: AllSwitch
   m_TagString: Untagged
@@ -2170,6 +2220,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1683950357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683950355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8306d7ebcb58ac459914ca7bed40810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjects:
+  - {fileID: 1503529576}
+  - {fileID: 633686807}
+  - {fileID: 1770780426}
+  - {fileID: 1226607441}
+  flag: 0
 --- !u!1 &1698688717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,6 +2406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1770780428}
   - component: {fileID: 1770780427}
+  - component: {fileID: 1770780429}
   m_Layer: 0
   m_Name: "\uC911\uB144\uAE30 \uCE90\uB9AD\uD1303"
   m_TagString: Untagged
@@ -2412,6 +2481,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1770780429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770780426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &2006323355
 GameObject:
   m_ObjectHideFlags: 0
