@@ -12,7 +12,10 @@ public class allSwitch : MonoBehaviour
         {
             for (int i = 0; i < gameObjects.Count; i++)
             {
-                gameObjects[i].GetComponent<StartFadeOut>().isTrigger = true;
+                if(gameObjects[i].GetComponent<StartFadeOut>() != null)
+                    gameObjects[i].GetComponent<StartFadeOut>().isTrigger = true;
+                else if (gameObjects[i].GetComponent<StartFadeOutObj>() != null)
+                    gameObjects[i].GetComponent<StartFadeOutObj>().isTrigger = true;
             }
         }
     }
