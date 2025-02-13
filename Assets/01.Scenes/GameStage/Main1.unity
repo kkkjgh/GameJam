@@ -168,7 +168,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 86289919}
+<<<<<<< HEAD
   counttarget: {fileID: 0}
+=======
+  counttarget: {fileID: 1344219897}
+>>>>>>> d882753803ae7e4535e3b49bb2e7c15dfdd7fc8a
 --- !u!1 &122074552
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: -50
+  counttarget: {fileID: 1344219897}
 --- !u!1001 &372867633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1961,7 +1966,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1086265321}
+<<<<<<< HEAD
   counttarget: {fileID: 0}
+=======
+  counttarget: {fileID: 1344219897}
+>>>>>>> d882753803ae7e4535e3b49bb2e7c15dfdd7fc8a
 --- !u!1 &1194230332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,6 +2455,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextButton: {fileID: 0}
   buttonClickCount: 0
+<<<<<<< HEAD
+=======
+  flag: 0
+>>>>>>> d882753803ae7e4535e3b49bb2e7c15dfdd7fc8a
 --- !u!4 &1344219899
 Transform:
   m_ObjectHideFlags: 0
@@ -2492,6 +2505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetToDisable: {fileID: 1520179428}
   targetToEnable: {fileID: 588581774}
+  counttarget: {fileID: 1344219897}
 --- !u!4 &1382843838
 Transform:
   m_ObjectHideFlags: 0
@@ -3732,7 +3746,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1792657283}
+<<<<<<< HEAD
   counttarget: {fileID: 0}
+=======
+  counttarget: {fileID: 1344219897}
+>>>>>>> d882753803ae7e4535e3b49bb2e7c15dfdd7fc8a
 --- !u!1 &1852124323
 GameObject:
   m_ObjectHideFlags: 0
