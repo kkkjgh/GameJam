@@ -411,6 +411,7 @@ GameObject:
   - component: {fileID: 259982337}
   - component: {fileID: 259982336}
   - component: {fileID: 259982335}
+  - component: {fileID: 259982338}
   m_Layer: 5
   m_Name: RotateButton
   m_TagString: Untagged
@@ -494,6 +495,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 259982338}
+        m_TargetAssemblyTypeName: SFX, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &259982336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,6 +545,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259982333}
   m_CullTransparentMesh: 1
+--- !u!114 &259982338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259982333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72d68b781dd1ba4cabd378ea0be66ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: 2
 --- !u!1 &276504097
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +840,7 @@ GameObject:
   - component: {fileID: 489461780}
   - component: {fileID: 489461779}
   - component: {fileID: 489461778}
+  - component: {fileID: 489461781}
   m_Layer: 5
   m_Name: Disable  Button 1 (1)
   m_TagString: Untagged
@@ -885,6 +912,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 489461781}
+        m_TargetAssemblyTypeName: SFX, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1086265323}
         m_TargetAssemblyTypeName: DisableObject, Assembly-CSharp
         m_MethodName: DisableTarget
@@ -935,6 +974,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489461776}
   m_CullTransparentMesh: 1
+--- !u!114 &489461781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489461776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72d68b781dd1ba4cabd378ea0be66ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: 3
 --- !u!1 &658349507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1168,7 @@ GameObject:
   - component: {fileID: 817042932}
   - component: {fileID: 817042931}
   - component: {fileID: 817042930}
+  - component: {fileID: 817042933}
   m_Layer: 5
   m_Name: Disable  Button 1 (2)
   m_TagString: Untagged
@@ -1199,6 +1252,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 817042933}
+        m_TargetAssemblyTypeName: SFX, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &817042931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1237,6 +1302,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817042928}
   m_CullTransparentMesh: 1
+--- !u!114 &817042933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817042928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72d68b781dd1ba4cabd378ea0be66ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: 3
 --- !u!1 &833634649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,6 +1579,7 @@ GameObject:
   - component: {fileID: 885738666}
   - component: {fileID: 885738665}
   - component: {fileID: 885738664}
+  - component: {fileID: 885738667}
   m_Layer: 5
   m_Name: Button (Next)
   m_TagString: Untagged
@@ -1572,6 +1651,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 885738667}
+        m_TargetAssemblyTypeName: SFX, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1852124324}
         m_TargetAssemblyTypeName: Titlecut, Assembly-CSharp
         m_MethodName: LoadScene
@@ -1622,6 +1713,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885738662}
   m_CullTransparentMesh: 1
+--- !u!114 &885738667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885738662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72d68b781dd1ba4cabd378ea0be66ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: 0
 --- !u!1 &980794350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,6 +2859,7 @@ GameObject:
   - component: {fileID: 1688648475}
   - component: {fileID: 1688648474}
   - component: {fileID: 1688648473}
+  - component: {fileID: 1688648476}
   m_Layer: 5
   m_Name: Button (arm)
   m_TagString: Untagged
@@ -2826,6 +2931,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1688648476}
+        m_TargetAssemblyTypeName: SFX, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1382843837}
         m_TargetAssemblyTypeName: Onoff, Assembly-CSharp
         m_MethodName: ToggleObjects
@@ -2876,6 +2993,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688648471}
   m_CullTransparentMesh: 1
+--- !u!114 &1688648476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688648471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72d68b781dd1ba4cabd378ea0be66ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: 4
 --- !u!1 &1718933736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,6 +3102,7 @@ GameObject:
   - component: {fileID: 1729837317}
   - component: {fileID: 1729837316}
   - component: {fileID: 1729837315}
+  - component: {fileID: 1729837318}
   m_Layer: 5
   m_Name: Disable  Button 1
   m_TagString: Untagged
@@ -3043,6 +3174,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1729837318}
+        m_TargetAssemblyTypeName: SFX, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 86289921}
         m_TargetAssemblyTypeName: DisableObject, Assembly-CSharp
         m_MethodName: DisableTarget
@@ -3093,6 +3236,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729837313}
   m_CullTransparentMesh: 1
+--- !u!114 &1729837318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729837313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72d68b781dd1ba4cabd378ea0be66ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffect: 3
 --- !u!1 &1787590114
 GameObject:
   m_ObjectHideFlags: 0
