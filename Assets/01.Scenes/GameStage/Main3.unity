@@ -212,7 +212,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: typetext
-      value: 
+      value: "\uAC00\uC871\uB4E4\uC740 \uB0B4\uAC00 atm\uAE30\uC778 \uC904 \uC544\uB294
+        \uAC83 \uAC19\uB2E4. \uAC70\uC6B8\uC744 \uBC14\uB77C\uBCF4\uB2C8 \uC220\uC5D0
+        \uCDE8\uD55C \uB0B4 \uC790\uC2E0\uB9CC \uBCF4\uC774\uB294\uAD6C\uB098"
       objectReference: {fileID: 0}
     - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: typeSecond
