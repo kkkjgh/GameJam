@@ -38,7 +38,7 @@ public class LoopSystem : MonoBehaviour
     }
 
     public bool wrongCheck = false;
-    public int MaxStage = 6;
+    public int MaxStage = 5;
     public int stage = 0;
     public Text stageText;
     public int wrongCount = 0;
