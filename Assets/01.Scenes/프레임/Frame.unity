@@ -122,6 +122,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &222649868 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1028321517390190148, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+  m_PrefabInstance: {fileID: 5682173336013443172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &231004089
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +397,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 98002035841556393, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 536184182817100956, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_IsActive
@@ -394,10 +405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1028321517390190148, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Text
-      value: "\uAC00\uB098\uB2E4\uB77C\uB9C8\uBC14\uC0AC\uC544\uC790\uCC28\uCE74\uD0C0\uD30C\uD558
-        abcdefghijklmnop \uAC00\uB098\uB2E4\uB77C\uB9C8\uBC14\uC0AC\uC544\uC790\uCC28\uCE74\uD0C0\uD30C\uD558
-        abcdefghijklmnop \uAC00\uB098\uB2E4\uB77C\uB9C8\uBC14\uC0AC\uC544\uC790\uCC28\uCE74\uD0C0\uD30C\uD558
-        abcdefghijklmnop"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1235382066074289039, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_IsActive
@@ -513,14 +521,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: typetext
-      value: "\uAC00\uB098\uB2E4\uB77C\uB9C8\uBC14\uC0AC\uC544\uC790\uCC28\uCE74\uD0C0\uD30C\uD558
-        abcdefghijklmnop \uAC00\uB098\uB2E4\uB77C\uB9C8\uBC14\uC0AC\uC544\uC790\uCC28\uCE74\uD0C0\uD30C\uD558
-        abcdefghijklmnop \uAC00\uB098\uB2E4\uB77C\uB9C8\uBC14\uC0AC\uC544\uC790\uCC28\uCE74\uD0C0\uD30C\uD558
-        abcdefghijklmnop"
+      value: "\uB098 \uB54C\uBB38\uC5D0 \uB9E4\uC77C \uC2F8\uC6B0\uB294 \uC5C4\uB9C8
+        \uC544\uBE60,,, \uC544\uD508\uAC8C \uB0B4 \uC798\uBABB\uC778\uAC00?.. \uC9C0\uAE0B\uC9C0\uAE0B\uD558\uB2E4.
+        \uC2DC\uAC04\uC774 \uBA48\uCDB0\uBC84\uB9B0 \uAC83 \uAC19\uC544"
       objectReference: {fileID: 0}
     - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: TargetText
       value: 
+      objectReference: {fileID: 222649868}
+    - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: typeSecond
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4512146834186204433, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_IsActive
@@ -550,9 +561,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 782
       objectReference: {fileID: 0}
+    - target: {fileID: 8213406344847541302, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8616706606662083356, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8699133111786661500, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_SizeDelta.y
