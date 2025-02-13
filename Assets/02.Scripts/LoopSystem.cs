@@ -71,13 +71,25 @@ public class LoopSystem : MonoBehaviour
             SceneManager.LoadScene("Finish");
         }
         stage++;
+        string a = "main" + stage;
         SceneManager.LoadScene(stage.ToString());
         
     }
     public void GoToScene(int scene)
     {
-        stage = scene; 
-        SceneManager.LoadScene(String.Format(scene.ToString()));
+        stage = scene;
+        if (stage == 0)
+        {
+            SceneManager.LoadScene("Title");
+        }
+        else if (stage < MaxStage - 1 && stage != 0) // 0 입력 시 타이틀
+        {
+            SceneManager.LoadScene(String.Format(scene.ToString()));
+        } else if (stage == MaxStage - 1)
+        {
+            SceneManager.LoadScene("Finish");
+        }
+
     }
     public void GoToStart()
     {
