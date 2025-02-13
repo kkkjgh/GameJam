@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class NextButton : MonoBehaviour
 {
+    public bool flag;
     public void next()
     {
-        LoopSystem.Instance.GoToNextScene();
+        if (flag)
+        {
+            LoopSystem.Instance.GoToNextScene();
+        }
     }
 }
