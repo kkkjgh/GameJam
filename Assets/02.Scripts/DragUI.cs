@@ -4,25 +4,21 @@ using UnityEngine.EventSystems;
 public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     private Transform canvas;               // UI가 소속되어 있는 최상단의 Canvas Transform
-    private Transform previousParent;       // 해당 오브젝트가 직전에 소속되어 있었던 부모 Transfron
+    private Vector3 previousPos;       // UI 시작 시 위치
     private RectTransform rect;             // UI 위치 제어를 위한 RectTransform
     private CanvasGroup canvasGroup;        // UI의 알파값과 상호작용 제어를 위한 CanvasGroup
+    [SerializeField] private bool dragReplace = true; // 드래그 취소 시 위치 재설정
 
     private void Awake()
     {
         canvas = FindObjectOfType<Canvas>().transform;
         rect = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        previousPos = rect.transform.position;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        previousParent = transform.parent;
-
-        transform.SetParent(canvas);
-        transform.SetAsLastSibling();
-        canvasGroup.alpha = 0.6f;
-        canvasGroup.blocksRaycasts = false;
     }
     public void OnDrag(PointerEventData eventData)
     {
@@ -30,13 +26,10 @@ public class DragUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     }
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (transform.parent == canvas)
+        if (dragReplace)
         {
-            transform.SetParent(previousParent);
-            rect.position = previousParent.GetComponent<RectTransform>().position;
+            rect.position = previousPos;
         }
-        canvasGroup.alpha = 1.0f;
-        canvasGroup.blocksRaycasts = true;
     }
 }
 
