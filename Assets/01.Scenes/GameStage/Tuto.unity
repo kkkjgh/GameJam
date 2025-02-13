@@ -444,12 +444,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &809267655
+--- !u!1 &845496287 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 364457421957225812, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
+  m_PrefabInstance: {fileID: 1988759056572943846}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809267657}
@@ -488,6 +488,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &846747855
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +573,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 809267656}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Titlecut, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -1042,6 +1044,18 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8296838955234154669, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
   m_PrefabInstance: {fileID: 1988759056572943846}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1423035131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845496287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ea3b0cf765ca74690928a32b3b3ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1449875587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,7 +1240,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 809267656}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Titlecut, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -1546,7 +1560,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 809267656}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Titlecut, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
@@ -1877,6 +1891,7 @@ PrefabInstance:
     - target: {fileID: 4427558538474987025, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 1449875587}
     - target: {fileID: 4427558538474987025, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1905,6 +1920,16 @@ PrefabInstance:
     - target: {fileID: 4427558538474987025, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+=======
+      objectReference: {fileID: 1423035131}
+    - target: {fileID: 4427558538474987025, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: next
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427558538474987025, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NextButton, Assembly-CSharp
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8296838955234154669, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
       propertyPath: m_Pivot.x
@@ -1989,7 +2014,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 364457421957225812, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1423035131}
   m_SourcePrefab: {fileID: 100100000, guid: 24774834e5898834fbeb9c08935769bb, type: 3}
 --- !u!1001 &7890148226940472387
 PrefabInstance:
@@ -2060,7 +2088,6 @@ SceneRoots:
   - {fileID: 1947417370}
   - {fileID: 1805901490}
   - {fileID: 2011738682}
-  - {fileID: 809267657}
   - {fileID: 1449875589}
   - {fileID: 1034693153}
   - {fileID: 863660910}
