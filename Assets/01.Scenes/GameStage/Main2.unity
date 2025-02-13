@@ -265,6 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 137948947}
   - component: {fileID: 137948946}
+  - component: {fileID: 137948948}
   m_Layer: 0
   m_Name: KakaoTalk_20250213_101956751_02
   m_TagString: Untagged
@@ -339,6 +340,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137948948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137948945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &149852224
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +489,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: flagObj
+      value: 
+      objectReference: {fileID: 1626416702}
+    - target: {fileID: 4292319131282801584, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: typetext
       value: "\uC5B4\uC81C\uB3C4 \uBD88\uD569\uACA9 \uC624\uB298\uB3C4 \uBD88\uD569\uACA9,,
         \uB0B4\uC77C\uB3C4 \uBED4\uD558\uC9C0 \uBB50. \uC544\uBB34\uB3C4 \uB098\uB97C
@@ -606,6 +625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 217146963}
   - component: {fileID: 217146962}
+  - component: {fileID: 217146964}
   m_Layer: 0
   m_Name: "\uC774\uB825\uC11C (2)"
   m_TagString: Untagged
@@ -680,6 +700,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50.8, y: 0, z: 0}
+--- !u!114 &217146964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217146961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &218438630
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,6 +895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233659603}
   - component: {fileID: 233659602}
+  - component: {fileID: 233659604}
   m_Layer: 0
   m_Name: "\uCCAD\uB144\uAE30 \uBC30\uACBD2"
   m_TagString: Untagged
@@ -935,6 +970,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.88}
+--- !u!114 &233659604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233659601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1001 &315945469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1002,6 +1051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 363787992}
   - component: {fileID: 363787991}
+  - component: {fileID: 363787993}
   m_Layer: 0
   m_Name: KakaoTalk_20250213_101956751
   m_TagString: Untagged
@@ -1076,6 +1126,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &363787993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363787990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &561986814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 887240144}
   - component: {fileID: 887240143}
+  - component: {fileID: 887240145}
   m_Layer: 0
   m_Name: "\uC774\uB825\uC11C"
   m_TagString: Untagged
@@ -1485,6 +1550,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50.8, y: 0, z: 0}
+--- !u!114 &887240145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887240142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &984048018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,6 +1574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 984048020}
   - component: {fileID: 984048019}
+  - component: {fileID: 984048021}
   m_Layer: 0
   m_Name: "\uCCAD\uB144\uAE30 \uBC30\uACBD3"
   m_TagString: Untagged
@@ -1569,6 +1649,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &984048021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984048018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1008592061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,6 +2122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1201333969}
   - component: {fileID: 1201333968}
+  - component: {fileID: 1201333970}
   m_Layer: 0
   m_Name: "\uCCAD\uB144\uAE30 \uCE90\uB9AD\uD1301"
   m_TagString: Untagged
@@ -2102,6 +2197,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.88}
+--- !u!114 &1201333970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201333967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1249139205
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,6 +2221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249139207}
   - component: {fileID: 1249139206}
+  - component: {fileID: 1249139208}
   m_Layer: 0
   m_Name: "\uCCAD\uB144\uAE30 \uBC30\uACBD1"
   m_TagString: Untagged
@@ -2186,6 +2296,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1249139208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249139205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1250058553
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,6 +2705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1602412573}
   - component: {fileID: 1602412572}
+  - component: {fileID: 1602412574}
   m_Layer: 0
   m_Name: "\uC774\uB825\uC11C (1)"
   m_TagString: Untagged
@@ -2655,6 +2780,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50.8, y: 0, z: 0}
+--- !u!114 &1602412574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602412571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1619864256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,6 +2878,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1626416702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1626416703}
+  - component: {fileID: 1626416704}
+  m_Layer: 0
+  m_Name: AllSwitch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1626416703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626416702}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1626416704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626416702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8306d7ebcb58ac459914ca7bed40810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjects:
+  - {fileID: 137948945}
+  - {fileID: 1697481905}
+  - {fileID: 363787990}
+  - {fileID: 887240142}
+  - {fileID: 1602412571}
+  - {fileID: 217146961}
+  - {fileID: 1249139205}
+  - {fileID: 984048018}
+  - {fileID: 233659601}
+  - {fileID: 1201333967}
+  flag: 0
 --- !u!1 &1633638664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,6 +3039,7 @@ GameObject:
   - component: {fileID: 1697481908}
   - component: {fileID: 1697481907}
   - component: {fileID: 1697481906}
+  - component: {fileID: 1697481909}
   m_Layer: 0
   m_Name: KakaoTalk_20250213_101956751_01
   m_TagString: Untagged
@@ -2939,6 +3135,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1697481909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697481905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &1764787159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,3 +3820,4 @@ SceneRoots:
   - {fileID: 1201333969}
   - {fileID: 1008592063}
   - {fileID: 1166646126}
+  - {fileID: 1626416703}
