@@ -49,9 +49,20 @@ public class SoundManager : MonoBehaviour
     {
         SFX_CLICK,
         SFX_BOOK,
-        SFX_NEXTSTAGE,
-        SFX_CLEAR,
-        SFX_FINISH
+        SFX_1ST_CLOCK,
+        SFX_1ST_CIGARETTE,
+        SFX_1ST_ARM,
+        SFX_1ST_TEAR,
+        SFX_2ST_CURTAIN,
+        SFX_2ST_RESUME,
+        SFX_2ST_CHARACTER,
+        SFX_2ST_POSITIVE,
+        SFX_3ST_PLAQUE,
+        SFX_3ST_FAMILY,
+        SFX_3ST_MIRROR,
+        SFX_4ST_CHAIR,
+        SFX_4ST_FRAME,
+
     }
 
     [SerializeField] private AudioClip[] bgms;
