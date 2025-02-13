@@ -1103,6 +1103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588581776}
   - component: {fileID: 588581775}
+  - component: {fileID: 588581777}
   m_Layer: 0
   m_Name: "\uCCAD\uC18C\uB144 \uCE90\uB9AD\uD1303-\uD314 (1)"
   m_TagString: Untagged
@@ -1178,6 +1179,18 @@ Transform:
   - {fileID: 122074553}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.619}
+--- !u!114 &588581777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588581774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9557decb2fad3ea43a146d3ab2613257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &658349507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,6 +1345,7 @@ MonoBehaviour:
   - {fileID: 1283560224}
   - {fileID: 658349507}
   - {fileID: 1520179428}
+  - {fileID: 760653730}
   flag: 0
 --- !u!1 &760653730
 GameObject:
@@ -1343,6 +1357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 760653732}
   - component: {fileID: 760653731}
+  - component: {fileID: 760653733}
   m_Layer: 5
   m_Name: KakaoTalk_20250212_193605411_01
   m_TagString: Untagged
@@ -1417,6 +1432,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 276504098}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &760653733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760653730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acd9db01c2f7ca48b88d1b4f1f5efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTrigger: 0
+  renderer: {fileID: 0}
 --- !u!1 &817042928
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,7 +2600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7517567296531388759, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Text
-      value: 3 puzzles
+      value: 5 puzzles
       objectReference: {fileID: 0}
     - target: {fileID: 7638360413047978475, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: flag

@@ -42,6 +42,10 @@ public class LoopSystem : MonoBehaviour
     public int stage = 0;
     public Text stageText;
     public int wrongCount = 0;
+    public int stageOneCount;
+    public int stageTwoCount;
+    public int stageThreeCount;
+    public int stageFourCount;
     public int GetStage()
     {
         return stage;

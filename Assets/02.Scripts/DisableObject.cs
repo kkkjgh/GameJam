@@ -13,6 +13,7 @@ public class DisableObject : MonoBehaviour
             targetObject.SetActive(false); // 오브젝트 비활성화
             if (counttarget != null) {
                 counttarget.GetComponent<ButtonManager>().buttonClickCount++; // 카운트 증가
+                LoopSystem.Instance.stageOneCount++;
             }
 
         }
