@@ -5,7 +5,7 @@ using UnityEngine;
 public class GotoButton : MonoBehaviour
 {
     public int sceneNum;
-    public void next()
+    public void Goto()
     {
         LoopSystem.Instance.GoToScene(sceneNum);
     }

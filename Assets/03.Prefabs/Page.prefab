@@ -172,6 +172,7 @@ MonoBehaviour:
   typeSecond: 16
   index: 0
   endObj: {fileID: 2256857375148285974}
+  typeEnd: 0
 --- !u!1 &1235382066074289039
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +693,7 @@ GameObject:
   - component: {fileID: 3045583189645848639}
   - component: {fileID: 1763944092839767554}
   - component: {fileID: 845605574702208138}
-  - component: {fileID: 4284076757705640842}
+  - component: {fileID: 2039178289355046194}
   m_Layer: 5
   m_Name: Home Button
   m_TagString: Untagged
@@ -800,8 +801,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1763944092839767554}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &4284076757705640842
+      m_Calls:
+      - m_Target: {fileID: 2039178289355046194}
+        m_TargetAssemblyTypeName: GotoButton, Assembly-CSharp
+        m_MethodName: Goto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2039178289355046194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

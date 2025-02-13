@@ -4,14 +4,14 @@ using UnityEngine.SceneManagement;  // 씬 관리 관련 네임스페이스
 public class Titlecut : MonoBehaviour
 {
     // 지정할 씬 이름 (Inspector에서 설정 가능)
-    public string sceneName;
+    //public string sceneName;
 
     // 씬 전환 함수
-    public void LoadScene()
-    {
-        SoundManager.Instance.stopBGM(); // 기존 브금 정지
-        SceneManager.LoadScene(sceneName);
-    }
+    //public void LoadScene()
+    //{
+     //   SoundManager.Instance.stopBGM(); // 기존 브금 정지
+    //    SceneManager.LoadScene(sceneName);
+    //}
 }
 
 
