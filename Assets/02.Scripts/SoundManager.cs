@@ -144,9 +144,10 @@ public class SoundManager : MonoBehaviour
         // BGM이 더 이상 필요 없다면 정지
         audioBGM.Stop();
     }
+
+    // BGM 볼륨을 설정하는 메소드
     public void SetBGMVolume(float volume)
     {
         audioBGM.volume = volume;
     }
-
 }
