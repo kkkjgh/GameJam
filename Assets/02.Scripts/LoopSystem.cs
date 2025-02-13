@@ -40,7 +40,6 @@ public class LoopSystem : MonoBehaviour
     public int MaxStage = 4;
     public int MaxChapter = 4;
     public int stage = 0;
-    public int chapter = 0;
     public Text stageText;
     public int wrongCount = 0;
     
@@ -56,35 +55,30 @@ public class LoopSystem : MonoBehaviour
     }
     public void Printstage()
     {
-        stageText.GetComponent<Text>().text = String.Format(chapter + " - " + stage);
+        //stageText.GetComponent<Text>().text = ;
     }
     public void GoToNextScene()
     {
-
-        if (stage+1 == MaxStage)
-        {
-            chapter++;
-
-        }
-        else if ((stage + 1) == MaxChapter && (stage + 1) == MaxStage)
+        if ((stage + 1) == MaxStage)
         {
             SceneManager.LoadScene("Finish");
         }
         stage++;
-        string a = "main" + stage;
+        string sceneName = "main" + stage;
         SceneManager.LoadScene(stage.ToString());
         
     }
     public void GoToScene(int scene)
     {
         stage = scene;
+        string sceneName = "main" + scene;
         if (stage == 0)
         {
             SceneManager.LoadScene("Title");
         }
         else if (stage < MaxStage - 1 && stage != 0) // 0 입력 시 타이틀
         {
-            SceneManager.LoadScene(String.Format(scene.ToString()));
+            SceneManager.LoadScene(String.Format(sceneName));
         } else if (stage == MaxStage - 1)
         {
             SceneManager.LoadScene("Finish");
@@ -96,6 +90,5 @@ public class LoopSystem : MonoBehaviour
         SceneManager.LoadScene("01");
         wrongCheck = false;
         stage = 1;
-        chapter = 1;
     }
 }
