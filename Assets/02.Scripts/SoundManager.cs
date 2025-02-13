@@ -8,35 +8,43 @@ public class SoundManager : MonoBehaviour
 
     void Awake()
     {
-        if (null == instance)
+        if (instance == null)
         {
-            //이 클래스 인스턴스가 탄생했을 때 전역변수 instance에 게임매니저 인스턴스가 담겨있지 않다면, 자신을 넣어준다.
             instance = this;
-
             DontDestroyOnLoad(this.gameObject);
+
+            if (audioBGM != null)
+                audioBGM.loop = true; // BGM 반복 설정
         }
         else
         {
             Destroy(this.gameObject);
         }
     }
+
     public static SoundManager Instance
     {
         get
         {
-            if (null == instance)
+            if (instance == null)
             {
-                return null;
+                instance = FindObjectOfType<SoundManager>();
+                if (instance == null)
+                {
+                    Debug.LogError("SoundManager 인스턴스가 존재하지 않습니다!");
+                }
             }
             return instance;
         }
     }
+
     public enum BGM
     {
         BGM_TITLE,
         BGM_STAGE,
         BGM_FINISH
     }
+
     public enum SFX
     {
         SFX_BUTTON,
@@ -46,23 +54,34 @@ public class SoundManager : MonoBehaviour
         SFX_FINISH
     }
 
-    [SerializeField] AudioClip[] bgms;
-    [SerializeField] AudioClip[] sfxs;
+    [SerializeField] private AudioClip[] bgms;
+    [SerializeField] private AudioClip[] sfxs;
 
-    [SerializeField] AudioSource audioBGM;
-    [SerializeField] AudioSource audioSFX;
+    [SerializeField] private AudioSource audioBGM;
+    [SerializeField] private AudioSource audioSFX;
+
+    private Dictionary<SFX, float> sfxCooldown = new Dictionary<SFX, float>();
 
     public void playBGM(BGM bgmIndex)
     {
+        if (audioBGM.clip == bgms[(int)bgmIndex] && audioBGM.isPlaying)
+            return; // 같은 BGM이 이미 재생 중이면 다시 재생하지 않음.
+
         audioBGM.clip = bgms[(int)bgmIndex];
         audioBGM.Play();
     }
 
-    public void stopBGM() {
-        audioBGM.Stop(); 
+    public void stopBGM()
+    {
+        audioBGM.Stop();
     }
+
     public void playSFX(SFX sfxIndex)
     {
+        if (sfxCooldown.ContainsKey(sfxIndex) && Time.time - sfxCooldown[sfxIndex] < 0.1f)
+            return; // 같은 SFX가 0.1초 내에 다시 재생되지 않도록 함.
+
+        sfxCooldown[sfxIndex] = Time.time;
         audioSFX.PlayOneShot(sfxs[(int)sfxIndex]);
     }
 }
