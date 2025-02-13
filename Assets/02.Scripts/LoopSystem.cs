@@ -47,18 +47,24 @@ public class LoopSystem : MonoBehaviour
     }
     public void GoToNextScene()
     {
+        stage++;
         if ((stage + 1) == MaxStage)
         {
             SceneManager.LoadScene("Finish");
+        }if (stage == 0)
+        {
+            SceneManager.LoadScene("Tuto");
         }
-        stage++;
-        string sceneName = "Main" + stage;
-        SceneManager.LoadScene(sceneName);
+        else
+        {
+            string sceneName = "Main" + stage;
+            SceneManager.LoadScene(sceneName);
+        }
+        
 
     }
     public void GoToScene(int scene)
     {
-        stage = scene;
         if (scene == -1)
         {
             stage = -1;
@@ -79,8 +85,6 @@ public class LoopSystem : MonoBehaviour
             SceneManager.LoadScene("Finish");
             stage = MaxStage - 1;
         }
-        stage = scene; 
-        SceneManager.LoadScene(String.Format(scene.ToString()));
     }
     public void GoToStart()
     {
