@@ -10,6 +10,7 @@ public class NextButton : MonoBehaviour
     {
         if (flag)
         {
+            SoundManager.Instance.stopBGM();  // BGM ∏ÿ√ﬂ±‚
             LoopSystem.Instance.GoToNextScene();
         }
     }
