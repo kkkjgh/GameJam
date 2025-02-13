@@ -590,6 +590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageBGM
       objectReference: {fileID: 0}
+    - target: {fileID: 4732818786193632987, guid: a83031ad62dc8094eaaf17b4669d33ba, type: 3}
+      propertyPath: m_Volume
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 7581656244560717918, guid: a83031ad62dc8094eaaf17b4669d33ba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 260.0157
@@ -3248,7 +3252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bda46e106ecedc428a94191ac5192ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Main2
 --- !u!4 &1852124325
 Transform:
   m_ObjectHideFlags: 0

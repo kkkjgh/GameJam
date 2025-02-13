@@ -149,4 +149,9 @@ public class SoundManager : MonoBehaviour
     {
         audioBGM.volume = volume;
     }
+    public float GetSFXDuration(SFX sfxIndex)
+    {
+        return sfxs[(int)sfxIndex].length;  // 해당 SFX의 길이를 반환
+    }
+
 }
