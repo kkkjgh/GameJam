@@ -549,6 +549,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: 0/3
       objectReference: {fileID: 0}
+    - target: {fileID: 7638360413047978475, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
+      propertyPath: flag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8127470097098498847, guid: 17b944e8e366d114e98bff1e301dded9, type: 3}
       propertyPath: m_Text
       value: 2

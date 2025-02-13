@@ -38,7 +38,7 @@ public class LoopSystem : MonoBehaviour
     }
 
     public bool wrongCheck = false;
-    public int MaxStage = 5;
+    public int MaxStage = 6;
     public int stage = 0;
     public Text stageText;
     public int wrongCount = 0;
@@ -55,6 +55,7 @@ public class LoopSystem : MonoBehaviour
         }if (stage == 0)
         {
             SceneManager.LoadScene("Tuto");
+            
         }
         else
         {
@@ -75,13 +76,13 @@ public class LoopSystem : MonoBehaviour
         {
             SceneManager.LoadScene("Tuto");
             stage = 0;
-            scene++;
+            
         }
         else if (scene < MaxStage && scene > 0)
         {
             SceneManager.LoadScene("Main" + scene);
             
-            stage = ++scene;
+            stage = scene;
         }
         else if (scene == MaxStage - 1)
         {
