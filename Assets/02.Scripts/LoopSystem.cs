@@ -49,7 +49,7 @@ public class LoopSystem : MonoBehaviour
     public void GoToNextScene()
     {
         stage++;
-        if (stage <= 5)
+        if (stage >= 5)
         {
             SceneManager.LoadScene("Finish");
         }if (stage == 0)
@@ -84,7 +84,7 @@ public class LoopSystem : MonoBehaviour
             
             stage = scene;
         }
-        else if (scene <= 5)
+        else if (scene >= 5)
         {
             SceneManager.LoadScene("Finish");
             stage = MaxStage - 1;

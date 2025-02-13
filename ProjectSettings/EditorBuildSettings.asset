@@ -5,12 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/01.Scenes/Chapter01/asdd.unity
-    guid: 064a39be03b8bda46855927c2709b34d
-  - enabled: 0
-    path: Assets/01.Scenes/Chapter01/asdasd.unity
-    guid: d10d7674655131d4d9e0594d0e194416
   - enabled: 1
     path: Assets/01.Scenes/GameStage/Title.unity
     guid: 26634aa126ee08c46a464f7e411d99a2
@@ -18,20 +12,11 @@ EditorBuildSettings:
     path: Assets/01.Scenes/GameStage/Main1.unity
     guid: 6ddf849f6ce3e0f409f43fe8e3e99034
   - enabled: 1
-    path: Assets/01.Scenes/GameStage/Main1.unity
-    guid: 6ddf849f6ce3e0f409f43fe8e3e99034
-  - enabled: 0
-    path: Assets/01.Scenes/GameStage/Temp.unity
-    guid: 6fe30c268ad051544a5ce213ff095c8d
-  - enabled: 1
     path: Assets/01.Scenes/GameStage/Main2.unity
     guid: c899f8bbab4927e4cb78f4c64bfdc203
   - enabled: 1
     path: Assets/01.Scenes/GameStage/Main4.unity
     guid: b749f4d5f3c0e3f47a24bc5def92baff
-  - enabled: 0
-    path: Assets/01.Scenes/GameStage/Main5.unity
-    guid: 299dd57c2f2579c45a529e303e5cb58d
   - enabled: 1
     path: Assets/01.Scenes/GameStage/Finish.unity
     guid: 475496b75f4b3084d8dcefd38765c156
