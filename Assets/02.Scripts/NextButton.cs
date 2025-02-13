@@ -9,8 +9,6 @@ public class NextButton : MonoBehaviour
     public bool flag;
     public void next()
     {
-        buttonManager = FindObjectOfType<ButtonManager>();
-        flag = buttonManager.flag;
         if (flag)
         {
             LoopSystem.Instance.GoToNextScene();
