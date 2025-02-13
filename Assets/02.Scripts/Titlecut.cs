@@ -9,7 +9,7 @@ public class Titlecut : MonoBehaviour
     // 씬 전환 함수
     public void LoadScene()
     {
-
+        SoundManager.Instance.stopBGM(); // 기존 브금 정지
         SceneManager.LoadScene(sceneName);
     }
 }
